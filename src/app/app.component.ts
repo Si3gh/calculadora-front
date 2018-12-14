@@ -28,6 +28,6 @@ export class AppComponent {
       numeroDois: this.numeroDois
     };
 
-    this.http.post('http://localhost:9090/api/calculadora',calculo).subscribe(response => this.resultado = response);
+    this.http.post('https://calculadorajoaopedropissolito.herokuapp.com/api/calculadora',calculo).subscribe(response => this.resultado = response);
   }
 }
