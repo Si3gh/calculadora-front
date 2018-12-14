@@ -1,0 +1,33 @@
+<script src="app.script.js"></script>
+
+<div class="dia" id="corpo">
+  <button style="float: right;" id="troca" (click)="trocaDia()">Alterna cor</button>
+  <h1>Calculadora</h1>
+  <h2>Informe os numero para calcular:</h2>
+  <div>
+    <label for="numeroUm">Informe o número 1:  </label>
+    <input id="numeroUm" type="number" [(ngModel)] = "numeroUm">
+  </div>
+
+  <div>
+    <label for="numeroDois">Informe o número 2:  </label>
+    <input id="numeroDois" type="number" [(ngModel)] = "numeroDois">
+  </div>
+
+  <div>
+    <label for="operacao">Informe a operação:  </label>
+    <select  id="operacao" [(ngModel)] = "operacao">
+      <option value="SOMA">Operação de soma</option>
+      <option value="SUBTRACAO">Operação de subtração</option>
+      <option value="DIVISAO">Operação de divisão</option>
+      <option value="MULTIPLICACAO">Operação de multiplicação</option>
+    </select>
+  </div>
+
+  <button style="background-color: green;color:white;" (click)="onClickExecutarOperacao()">Executar operação</button>
+
+  <div>
+    <h2>Resultado : {{resultado.resultado}}</h2>
+
+  </div>
+</div>

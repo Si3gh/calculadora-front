@@ -1,0 +1,10 @@
+.dia{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+.noite{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
